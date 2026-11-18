@@ -7,3 +7,17 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+puts "Cleaning database..."
+Restaurant.destroy_all
+
+puts "Creating restaurants..."
+Restaurant.create!(name: "Crab Croustillant", address: "Bikini Bottom", phone_number: "0666666666", category: "japanese")
+Restaurant.create!(name: "Le Poney Qui Tousse", address: "Boulghor Ville", phone_number: "0666666667", category: "french")
+Restaurant.create!(name: "truc", address: "Boulghor Ville", phone_number: "0666666662", category: "french")
+Restaurant.create!(name: "muche", address: "pornic", phone_number: "0666666669", category: "belgian")
+Restaurant.create!(name: "tuche", address: "sydney", phone_number: "0666666668", category: "italian")
+
+
+
+puts "Finished!"
